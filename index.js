@@ -1,7 +1,10 @@
 // FORK this starter file and save it to your own Repl.it account.
 let astronautStatus="ready";
 let fuelLevel="100%";
-let astronautCount="7";
+//let astronautCount="7";
+const prompt = require('prompt-sync')();
+const astronautCount = prompt('Enter AstronautCount? ');
+
 let averageAstronautMassKg="80.7";
 let crewMassKg=astronautCount*averageAstronautMassKg;
 let fuelMassKg="760,000";
@@ -22,7 +25,9 @@ console.log("Time : "+n);
 console.log("--------------------------------------------");
 console.log("> ASTRONAUT INFO ");
 console.log("--------------------------------------------");
-console.log("Count "+ astronautCount);
+
+console.log(`Astronaut Count is ${astronautCount}`);
+
 
 console.log("* status: "+astronautStatus);
 console.log("--------------------------------------------");
@@ -46,6 +51,8 @@ console.log("--------------------------------------------");
 console.log("> OVERALL STATUS");
 console.log("--------------------------------------------");
 console.log("* Clear for takeoff: YES");
+
+
 
 
 
